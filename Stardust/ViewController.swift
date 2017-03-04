@@ -26,16 +26,10 @@ class ViewController: UIViewController, PersonEventProtocol, CallEventProtocol {
         print("[add]person{\(person)}")
     }
 
-    var firebaseAccessor: FirebaseAccessor?
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        firebaseAccessor = FirebaseAccessor()
-        if let accessor = self.firebaseAccessor {
-            accessor.personEventProtocol = self
-            accessor.callEventProtocol = self
-        }
+        FirebaseAccessor.sharedInstance
     }
 
     override func didReceiveMemoryWarning() {
