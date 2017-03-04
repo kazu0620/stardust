@@ -13,11 +13,9 @@ class PersonSearcher {
 
     let disposeBag = DisposeBag()
     let messageManager = GNSMessageManager(apiKey:"AIzaSyB0kDp-UE6zyyG0SJ7cHhgkbJK10xoiztk")
-    
-
-    func search() -> Observable<Person> {
-        
-    }
+    //func search() -> Observable<Person> {
+    //    
+    //}
     
     //
     //func publish(person:Person) {
