@@ -9,29 +9,28 @@
 /* Begin PBXBuildFile section */
 		1CE1043B91308486E102CFAC /* Pods_Stardust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF51C9BABADFD7993C557F7C /* Pods_Stardust.framework */; };
 		4A648C1F1E6A633F00FDA1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A648C1E1E6A633F00FDA1B4 /* GoogleService-Info.plist */; };
+		4A648C271E6AA2B800FDA1B4 /* FirebaseAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A648C261E6AA2B800FDA1B4 /* FirebaseAccessor.swift */; };
 		80AB592E1E6A749400373C35 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592D1E6A749400373C35 /* Person.swift */; };
 		80AB59301E6A750500373C35 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592F1E6A750500373C35 /* Topic.swift */; };
 		80AB59321E6A758800373C35 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59311E6A758800373C35 /* Call.swift */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
-		F14FB7931E6A7FF900E9AD6A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14FB7921E6A7FF900E9AD6A /* AVFoundation.framework */; };
-		F1C0F1BB1E6A7971001B3EE1 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0F1BA1E6A7971001B3EE1 /* SelfieViewController.swift */; };
-		F1C0F1BD1E6A7EC7001B3EE1 /* Selfie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C0F1BC1E6A7EC7001B3EE1 /* Selfie.storyboard */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
 		A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2421E6A5FDF007C677D /* Main.storyboard */; };
 		A0D6B2461E6A5FDF007C677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2451E6A5FDF007C677D /* Assets.xcassets */; };
 		A0D6B2491E6A5FDF007C677D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2471E6A5FDF007C677D /* LaunchScreen.storyboard */; };
+		F14FB7931E6A7FF900E9AD6A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14FB7921E6A7FF900E9AD6A /* AVFoundation.framework */; };
+		F1C0F1BB1E6A7971001B3EE1 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0F1BA1E6A7971001B3EE1 /* SelfieViewController.swift */; };
+		F1C0F1BD1E6A7EC7001B3EE1 /* Selfie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C0F1BC1E6A7EC7001B3EE1 /* Selfie.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A648C1E1E6A633F00FDA1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Stardust/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A648C261E6AA2B800FDA1B4 /* FirebaseAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAccessor.swift; sourceTree = "<group>"; };
 		696A59F32F327B088A4AC38D /* Pods-Stardust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stardust.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stardust/Pods-Stardust.release.xcconfig"; sourceTree = "<group>"; };
 		6C20BA1922B5318C6ECD72C1 /* Pods-Stardust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stardust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stardust/Pods-Stardust.debug.xcconfig"; sourceTree = "<group>"; };
 		80AB592D1E6A749400373C35 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		80AB592F1E6A750500373C35 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		80AB59311E6A758800373C35 /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
-		F14FB7921E6A7FF900E9AD6A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F1C0F1BA1E6A7971001B3EE1 /* SelfieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
-		F1C0F1BC1E6A7EC7001B3EE1 /* Selfie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Selfie.storyboard; sourceTree = "<group>"; };
 		A0D6B23B1E6A5FDF007C677D /* Stardust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D6B2401E6A5FDF007C677D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +39,9 @@
 		A0D6B2481E6A5FDF007C677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0D6B24A1E6A5FDF007C677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF51C9BABADFD7993C557F7C /* Pods_Stardust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stardust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14FB7921E6A7FF900E9AD6A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F1C0F1BA1E6A7971001B3EE1 /* SelfieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
+		F1C0F1BC1E6A7EC7001B3EE1 /* Selfie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Selfie.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A648C251E6AA2A700FDA1B4 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				4A648C261E6AA2B800FDA1B4 /* FirebaseAccessor.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
 		80AB59261E6A722D00373C35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 				80AB592A1E6A72CA00373C35 /* UI */,
 				80AB59271E6A723800373C35 /* View */,
 				80AB59281E6A72A100373C35 /* ViewModel */,
+				4A648C251E6AA2A700FDA1B4 /* Firebase */,
 			);
 			path = Stardust;
 			sourceTree = "<group>";
@@ -282,6 +293,7 @@
 				80AB59321E6A758800373C35 /* Call.swift in Sources */,
 				A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */,
 				A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */,
+				4A648C271E6AA2B800FDA1B4 /* FirebaseAccessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
