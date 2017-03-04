@@ -13,19 +13,22 @@
 		80AB592E1E6A749400373C35 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592D1E6A749400373C35 /* Person.swift */; };
 		80AB59301E6A750500373C35 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592F1E6A750500373C35 /* Topic.swift */; };
 		80AB59321E6A758800373C35 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59311E6A758800373C35 /* Call.swift */; };
+		80AB59361E6A80CB00373C35 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AB59351E6A80CB00373C35 /* SignUp.storyboard */; };
+		80AB593C1E6A857B00373C35 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB593B1E6A857B00373C35 /* Accounts.framework */; };
+		80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */; };
+		80AB59411E6AA31200373C35 /* TwitterAccountFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */; };
+		80AB59421E6AA4E000373C35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59371E6A84A100373C35 /* SignUpViewController.swift */; };
 		A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
+		F1CF15AF1E6A966500B534FB /* NearByList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF15AE1E6A966500B534FB /* NearByList.storyboard */; };
+		F1CF15B11E6A96E000B534FB /* NearByListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */; };
+		F1CF15B41E6A973400B534FB /* NearByListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF15B21E6A973400B534FB /* NearByListCell.swift */; };
+		F1CF15B51E6A973400B534FB /* NearByListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CF15B31E6A973400B534FB /* NearByListCell.xib */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
 		A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2421E6A5FDF007C677D /* Main.storyboard */; };
 		A0D6B2461E6A5FDF007C677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2451E6A5FDF007C677D /* Assets.xcassets */; };
 		A0D6B2491E6A5FDF007C677D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2471E6A5FDF007C677D /* LaunchScreen.storyboard */; };
 		F14FB7931E6A7FF900E9AD6A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14FB7921E6A7FF900E9AD6A /* AVFoundation.framework */; };
-		F1CF15AF1E6A966500B534FB /* NearByList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF15AE1E6A966500B534FB /* NearByList.storyboard */; };
-		F1CF15B11E6A96E000B534FB /* NearByListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */; };
-		F1CF15B41E6A973400B534FB /* NearByListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF15B21E6A973400B534FB /* NearByListCell.swift */; };
-		F1CF15B51E6A973400B534FB /* NearByListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CF15B31E6A973400B534FB /* NearByListCell.xib */; };
-		F1C0F1BB1E6A7971001B3EE1 /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0F1BA1E6A7971001B3EE1 /* SelfieViewController.swift */; };
-		F1C0F1BD1E6A7EC7001B3EE1 /* Selfie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C0F1BC1E6A7EC7001B3EE1 /* Selfie.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,16 @@
 		80AB592D1E6A749400373C35 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		80AB592F1E6A750500373C35 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		80AB59311E6A758800373C35 /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		80AB59351E6A80CB00373C35 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		80AB59371E6A84A100373C35 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		80AB59391E6A855700373C35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F1CF15AE1E6A966500B534FB /* NearByList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NearByList.storyboard; sourceTree = "<group>"; };
+		F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByListViewController.swift; sourceTree = "<group>"; };
+		F1CF15B21E6A973400B534FB /* NearByListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByListCell.swift; sourceTree = "<group>"; };
+		F1CF15B31E6A973400B534FB /* NearByListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByListCell.xib; sourceTree = "<group>"; };
+		80AB593B1E6A857B00373C35 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAccountFetcher.swift; sourceTree = "<group>"; };
+		80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonSearcher.swift; sourceTree = "<group>"; };
 		A0B007811E6A8FD4007ED2BD /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		A0D6B23B1E6A5FDF007C677D /* Stardust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardust.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,15 +57,9 @@
 		A0D6B2431E6A5FDF007C677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0D6B2451E6A5FDF007C677D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0D6B2481E6A5FDF007C677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F1CF15AE1E6A966500B534FB /* NearByList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NearByList.storyboard; sourceTree = "<group>"; };
-		F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByListViewController.swift; sourceTree = "<group>"; };
-		F1CF15B21E6A973400B534FB /* NearByListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByListCell.swift; sourceTree = "<group>"; };
-		F1CF15B31E6A973400B534FB /* NearByListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByListCell.xib; sourceTree = "<group>"; };
 		A0D6B24A1E6A5FDF007C677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF51C9BABADFD7993C557F7C /* Pods_Stardust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stardust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14FB7921E6A7FF900E9AD6A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F1C0F1BA1E6A7971001B3EE1 /* SelfieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
-		F1C0F1BC1E6A7EC7001B3EE1 /* Selfie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Selfie.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14FB7931E6A7FF900E9AD6A /* AVFoundation.framework in Frameworks */,
+				80AB593C1E6A857B00373C35 /* Accounts.framework in Frameworks */,
 				1CE1043B91308486E102CFAC /* Pods_Stardust.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +83,7 @@
 				80AB59311E6A758800373C35 /* Call.swift */,
 				80AB592D1E6A749400373C35 /* Person.swift */,
 				80AB592F1E6A750500373C35 /* Topic.swift */,
+				80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -83,10 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				A0D6B2401E6A5FDF007C677D /* ViewController.swift */,
-				F1C0F1BA1E6A7971001B3EE1 /* SelfieViewController.swift */,
 				F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */,
 				F1CF15B21E6A973400B534FB /* NearByListCell.swift */,
 				F1CF15B31E6A973400B534FB /* NearByListCell.xib */,
+				80AB59371E6A84A100373C35 /* SignUpViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 		80AB59281E6A72A100373C35 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -115,8 +125,8 @@
 			children = (
 				A0D6B2421E6A5FDF007C677D /* Main.storyboard */,
 				A0D6B2471E6A5FDF007C677D /* LaunchScreen.storyboard */,
-				F1C0F1BC1E6A7EC7001B3EE1 /* Selfie.storyboard */,
 				F1CF15AE1E6A966500B534FB /* NearByList.storyboard */,
+				80AB59351E6A80CB00373C35 /* SignUp.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -156,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				F14FB7921E6A7FF900E9AD6A /* AVFoundation.framework */,
+				80AB593B1E6A857B00373C35 /* Accounts.framework */,
+				80AB59391E6A855700373C35 /* Social.framework */,
 				EF51C9BABADFD7993C557F7C /* Pods_Stardust.framework */,
 			);
 			name = Frameworks;
@@ -232,13 +244,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C0F1BD1E6A7EC7001B3EE1 /* Selfie.storyboard in Resources */,
 				A0D6B2491E6A5FDF007C677D /* LaunchScreen.storyboard in Resources */,
 				4A648C1F1E6A633F00FDA1B4 /* GoogleService-Info.plist in Resources */,
 				A0D6B2461E6A5FDF007C677D /* Assets.xcassets in Resources */,
 				F1CF15B51E6A973400B534FB /* NearByListCell.xib in Resources */,
 				A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */,
 				F1CF15AF1E6A966500B534FB /* NearByList.storyboard in Resources */,
+				80AB59361E6A80CB00373C35 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,15 +310,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				710A819D1E6A97E20093D2D5 /* NotificationPublisher.swift in Sources */,
-				F1C0F1BB1E6A7971001B3EE1 /* SelfieViewController.swift in Sources */,
 				80AB592E1E6A749400373C35 /* Person.swift in Sources */,
-				80AB59301E6A750500373C35 /* Topic.swift in Sources */,
+				80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */,
 				F1CF15B41E6A973400B534FB /* NearByListCell.swift in Sources */,
+				80AB59301E6A750500373C35 /* Topic.swift in Sources */,
+				80AB59421E6AA4E000373C35 /* SignUpViewController.swift in Sources */,
+				F1CF15B11E6A96E000B534FB /* NearByListViewController.swift in Sources */,
 				80AB59321E6A758800373C35 /* Call.swift in Sources */,
 				A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */,
-				F1CF15B11E6A96E000B534FB /* NearByListViewController.swift in Sources */,
 				A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */,
 				A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */,
+				80AB59411E6AA31200373C35 /* TwitterAccountFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
