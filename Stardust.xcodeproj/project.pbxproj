@@ -13,6 +13,9 @@
 		80AB59301E6A750500373C35 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592F1E6A750500373C35 /* Topic.swift */; };
 		80AB59321E6A758800373C35 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59311E6A758800373C35 /* Call.swift */; };
 		80AB59361E6A80CB00373C35 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AB59351E6A80CB00373C35 /* SignUp.storyboard */; };
+		80AB59381E6A84A100373C35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59371E6A84A100373C35 /* SignUpViewController.swift */; };
+		80AB593C1E6A857B00373C35 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB593B1E6A857B00373C35 /* Accounts.framework */; };
+		80AB593E1E6A85B100373C35 /* TwitterAccountFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
 		A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2421E6A5FDF007C677D /* Main.storyboard */; };
@@ -28,6 +31,10 @@
 		80AB592F1E6A750500373C35 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		80AB59311E6A758800373C35 /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
 		80AB59351E6A80CB00373C35 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		80AB59371E6A84A100373C35 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		80AB59391E6A855700373C35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		80AB593B1E6A857B00373C35 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAccountFetcher.swift; sourceTree = "<group>"; };
 		A0D6B23B1E6A5FDF007C677D /* Stardust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D6B2401E6A5FDF007C677D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AB593C1E6A857B00373C35 /* Accounts.framework in Frameworks */,
 				1CE1043B91308486E102CFAC /* Pods_Stardust.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +64,7 @@
 				80AB59311E6A758800373C35 /* Call.swift */,
 				80AB592D1E6A749400373C35 /* Person.swift */,
 				80AB592F1E6A750500373C35 /* Topic.swift */,
+				80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -64,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A0D6B2401E6A5FDF007C677D /* ViewController.swift */,
+				80AB59371E6A84A100373C35 /* SignUpViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 		AB7395F15A1568C73C8282E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80AB593B1E6A857B00373C35 /* Accounts.framework */,
+				80AB59391E6A855700373C35 /* Social.framework */,
 				EF51C9BABADFD7993C557F7C /* Pods_Stardust.framework */,
 			);
 			name = Frameworks;
@@ -268,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AB59381E6A84A100373C35 /* SignUpViewController.swift in Sources */,
 				80AB592E1E6A749400373C35 /* Person.swift in Sources */,
 				80AB59301E6A750500373C35 /* Topic.swift in Sources */,
 				80AB59321E6A758800373C35 /* Call.swift in Sources */,
+				80AB593E1E6A85B100373C35 /* TwitterAccountFetcher.swift in Sources */,
 				A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */,
 				A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */,
 			);
