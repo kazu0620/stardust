@@ -13,12 +13,10 @@
 		80AB592E1E6A749400373C35 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592D1E6A749400373C35 /* Person.swift */; };
 		80AB59301E6A750500373C35 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592F1E6A750500373C35 /* Topic.swift */; };
 		80AB59321E6A758800373C35 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59311E6A758800373C35 /* Call.swift */; };
-		A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */; };
 		80AB59361E6A80CB00373C35 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AB59351E6A80CB00373C35 /* SignUp.storyboard */; };
-		80AB59381E6A84A100373C35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59371E6A84A100373C35 /* SignUpViewController.swift */; };
 		80AB593C1E6A857B00373C35 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB593B1E6A857B00373C35 /* Accounts.framework */; };
-		80AB593E1E6A85B100373C35 /* TwitterAccountFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */; };
 		80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */; };
+		A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
 		A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2421E6A5FDF007C677D /* Main.storyboard */; };
@@ -35,14 +33,14 @@
 		80AB592D1E6A749400373C35 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		80AB592F1E6A750500373C35 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		80AB59311E6A758800373C35 /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
-		A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonSearcher.swift; sourceTree = "<group>"; };
-		A0B007811E6A8FD4007ED2BD /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		80AB59351E6A80CB00373C35 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		80AB59371E6A84A100373C35 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		80AB59391E6A855700373C35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		80AB593B1E6A857B00373C35 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAccountFetcher.swift; sourceTree = "<group>"; };
 		80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonSearcher.swift; sourceTree = "<group>"; };
+		A0B007811E6A8FD4007ED2BD /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		A0D6B23B1E6A5FDF007C677D /* Stardust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D6B2401E6A5FDF007C677D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				710A819D1E6A97E20093D2D5 /* NotificationPublisher.swift in Sources */,
-				F1C0F1BB1E6A7971001B3EE1 /* SelfieViewController.swift in Sources */,
 				80AB592E1E6A749400373C35 /* Person.swift in Sources */,
 				80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */,
 				80AB59301E6A750500373C35 /* Topic.swift in Sources */,
