@@ -190,8 +190,7 @@
 				TargetAttributes = {
 					A0D6B23A1E6A5FDF007C677D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = S2CWLP83Y8;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -410,13 +409,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S2CWLP83Y8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Stardust/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardustswift.com.Stardust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a8c017e9-9e53-4a2e-9262-a3b08818852e";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Develop";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)/Stardust/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -427,6 +424,7 @@
 			baseConfigurationReference = 696A59F32F327B088A4AC38D /* Pods-Stardust.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Stardust/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

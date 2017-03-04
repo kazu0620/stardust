@@ -10,24 +10,31 @@ import Foundation
 import RxSwift
 
 class PersonSearcher {
-
     let disposeBag = DisposeBag()
-    let messageManager = GNSMessageManager(apiKey:"AIzaSyB0kDp-UE6zyyG0SJ7cHhgkbJK10xoiztk")
-    //func search() -> Observable<Person> {
-    //    
-    //}
+    let messageManager = GNSMessageManager(apiKey:"AIzaSyBM9XvI0ZUDp9ymqrBlyt1APiz2srXE1j0")
+    let nearPersonIds = Variable<[Person.TwitterId]>([])
+    private var subscription: GNSSubscription?
+    private var publication: GNSPublication?
     
-    //
-    //func publish(person:Person) {
-    //    let publication = messageManager.publication(
-    //        with: message,
-    //        paramsBlock: { (params: GNSPublicationParams?) in
-    //        guard let params = params else { return }
-    //        params.strategy = GNSStrategy(paramsBlock: { (params: GNSStrategyParams?) in
-    //        guard let params = params else { return }
-    //        params.discoveryMediums = .audio
-    //            params.discoveryMode = .scan
-    //    })
-    //    
-    //}
+    func startSearching(){
+        subscription = messageManager?.subscription(messageFoundHandler: {[weak self] message in
+            guard let content = message?.content,
+                let twitterId = String(data: content, encoding: .utf8),
+                let weakSelf = self
+                else { return }
+            weakSelf.nearPersonIds.value = weakSelf.nearPersonIds.value + [twitterId]
+        }, messageLostHandler: {[weak self] message in
+            guard let content = message?.content,
+                let twitterId = String(data: content, encoding: .utf8),
+                let weakSelf = self
+                else { return }
+            weakSelf.nearPersonIds.value = weakSelf.nearPersonIds.value.filter{ $0 != twitterId }
+        })
+    }
+
+    func publish(person:Person) {
+        let personData = person.twitterId.data(using: .utf8)
+        let message = GNSMessage(content:personData)
+        publication = messageManager?.publication(with: message, paramsBlock: nil)
+    }
 }
