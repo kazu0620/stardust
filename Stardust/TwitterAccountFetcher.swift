@@ -10,23 +10,18 @@ import Foundation
 import RxSwift
 import Accounts
 
-class TwitterAccountFetcher {
+struct TwitterAccountFetcher {
     enum FetchError: Error {
         case AccountNotFound
     }
     
-    private let accountStore: ACAccountStore
-    private let type: ACAccountType
-    
-    init() {
-        self.accountStore = ACAccountStore()
-        self.type = accountStore.accountType(withAccountTypeIdentifier: ACAccountTypeIdentifierTwitter)
-    }
-    
-    func account() -> Observable<ACAccount> {
-        return Observable.create { [unowned self] observer -> Disposable in
-            self.accountStore
-                .requestAccessToAccounts(with: self.type,
+    static func account() -> Observable<ACAccount> {
+        let accountStore = ACAccountStore()
+        let type = accountStore.accountType(withAccountTypeIdentifier: ACAccountTypeIdentifierTwitter)
+        
+        return Observable.create { observer -> Disposable in
+            accountStore
+                .requestAccessToAccounts(with: type,
                                          options: nil,
                                          completion:
                     { (granted, error) in
@@ -36,7 +31,7 @@ class TwitterAccountFetcher {
                         }
                         
                         guard granted,
-                            let account = self.accountStore.accounts(with: self.type).last as? ACAccount else {
+                            let account = accountStore.accounts(with: type).last as? ACAccount else {
                             observer.onError(FetchError.AccountNotFound)
                             return
                         }

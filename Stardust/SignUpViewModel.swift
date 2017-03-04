@@ -22,10 +22,9 @@ struct SignUpViewModel {
         tapSignUp: Driver<Void>
         ) {
         
-        let fetcher = TwitterAccountFetcher()
         let twitterId = tapTwitter
             .asObservable()
-            .withLatestFrom(fetcher.account())
+            .withLatestFrom(TwitterAccountFetcher.account())
             .map{ $0.identifier as String }
             .asDriver(onErrorJustReturn: nil)
         

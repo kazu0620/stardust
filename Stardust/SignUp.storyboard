@@ -12,7 +12,7 @@
         <!--SIGN UP-->
         <scene sceneID="Vcz-Ig-Q5x">
             <objects>
-                <viewController id="xBv-WD-w07" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController id="xBv-WD-w07" customClass="SignUpViewController" customModule="Stardust" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hOh-m0-wmd"/>
                         <viewControllerLayoutGuide type="bottom" id="S8e-f9-Sk6"/>
