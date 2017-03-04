@@ -10,20 +10,20 @@ import UIKit
 import Argo
 import Firebase
 
-protocol PersonEventProtocol {
+public protocol PersonEventProtocol {
     func childAdd(person:Decoded<Person>)
     func childChanged(person:Decoded<Person>)
 }
 
-protocol CallEventProtocol {
+public protocol CallEventProtocol {
     func childAdd(call:Call, key:String)
     func childChanged(call:Call, key:String)
 }
 
 class FirebaseAccessor: NSObject {
     
-    var personEventProtocol:PersonEventProtocol?
-    var callEventProtocol:CallEventProtocol?
+    public var personEventProtocol:PersonEventProtocol?
+    public var callEventProtocol:CallEventProtocol?
     
     private var ref: FIRDatabaseReference!
     private var storageRef: FIRStorageReference!
