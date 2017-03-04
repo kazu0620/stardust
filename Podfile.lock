@@ -1,6 +1,7 @@
 PODS:
   - Argo (4.1.2):
     - Runes (>= 4.0.0)
+  - Curry (3.0.0)
   - Firebase/Core (3.14.0):
     - FirebaseAnalytics (= 3.7.0)
     - FirebaseCore (= 3.5.1)
@@ -64,6 +65,7 @@ PODS:
 
 DEPENDENCIES:
   - Argo
+  - Curry
   - Firebase/Database
   - Firebase/Messaging
   - Firebase/RemoteConfig
@@ -74,6 +76,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Argo: 5db06502fc1222d83011f574243089dab25202ff
+  Curry: eb3d2c75aec678b3cc7fb2729d2ad6dd121531d1
   Firebase: 85a581fb04e44f63ae9f4fbc8d6dabf4a4c18653
   FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
   FirebaseCore: 225d40532489835a034b8f4e2c9c87fbf4f615a2
@@ -94,6 +97,6 @@ SPEC CHECKSUMS:
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
 
-PODFILE CHECKSUM: 3874f1cd73f21a8dbabc806b95a23c02e4706aea
+PODFILE CHECKSUM: 999bb5bad14db80bcd08bcc3c161ff565ebc0993
 
 COCOAPODS: 1.2.0
