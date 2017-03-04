@@ -26,8 +26,10 @@ class LocalNotificationPublisher {
     
     static func publish(withUserName userName: String, userImage: UIImage?, timeInterval: TimeInterval) {
         
+        let notificationBodySuffix = " wants to meet you!"
+        
         let content = UNMutableNotificationContent()
-        content.body = "\(userName) wants to talk with you!"
+        content.body = userName + notificationBodySuffix
         content.sound = UNNotificationSound.default()
         
         content.userInfo = ["mutable-content": 1]
