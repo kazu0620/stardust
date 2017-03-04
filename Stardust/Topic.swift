@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import Argo
 
 enum Topic: Int {
     case RxSwift
     case TypeSafe
 }
+
+extension Topic: Decodable { }
