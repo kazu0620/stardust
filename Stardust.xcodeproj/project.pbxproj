@@ -16,6 +16,7 @@
 		80AB59381E6A84A100373C35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59371E6A84A100373C35 /* SignUpViewController.swift */; };
 		80AB593C1E6A857B00373C35 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB593B1E6A857B00373C35 /* Accounts.framework */; };
 		80AB593E1E6A85B100373C35 /* TwitterAccountFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */; };
+		80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
 		A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2421E6A5FDF007C677D /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		80AB59391E6A855700373C35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		80AB593B1E6A857B00373C35 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAccountFetcher.swift; sourceTree = "<group>"; };
+		80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		A0D6B23B1E6A5FDF007C677D /* Stardust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D6B2401E6A5FDF007C677D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		80AB59281E6A72A100373C35 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				80AB59381E6A84A100373C35 /* SignUpViewController.swift in Sources */,
 				80AB592E1E6A749400373C35 /* Person.swift in Sources */,
+				80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */,
 				80AB59301E6A750500373C35 /* Topic.swift in Sources */,
 				80AB59321E6A758800373C35 /* Call.swift in Sources */,
 				80AB593E1E6A85B100373C35 /* TwitterAccountFetcher.swift in Sources */,
