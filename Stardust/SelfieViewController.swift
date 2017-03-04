@@ -15,8 +15,11 @@ class SelfieViewController: UIViewController {
     var imagePickerController:UIImagePickerController!
     var image:UIImage?
     
+    @IBOutlet weak var selfieImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -27,20 +30,27 @@ class SelfieViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func tapShow(_ sender: Any) {
+        showCamera()
+    }
+    
     func showCamera() {
         self.imagePickerController = UIImagePickerController.init()
         self.imagePickerController.delegate = self
         self.imagePickerController.sourceType = .camera
         self.imagePickerController.cameraDevice = .front
+        self.imagePickerController.cameraFlashMode = .off
         
         present(self.imagePickerController, animated: true, completion: nil)
     }
-    
+}
+
+extension SelfieViewController {
     func uploadImage() {
         let storage = FIRStorage.storage()
-        let storageRef = storage.reference(forURL: " gs://stardustswift-1c8c5.appspot.com")
+        let storageRef = storage.reference(forURL: "gs://stardustswift-1c8c5.appspot.com")
         if let data = UIImagePNGRepresentation(self.image!) {
-            let riversRef = storageRef.child("images/rivers.jpg")
+            let riversRef = storageRef.child("images/shika_face.png")
             riversRef.put(data, metadata: nil, completion: { metaData, error in
                 print(data)
                 print(error)
@@ -49,11 +59,18 @@ class SelfieViewController: UIViewController {
     }
 }
 
+
 extension SelfieViewController:UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        self.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        let captureImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        self.image = UIImage.init(cgImage: (captureImage?.cgImage)!,
+                                  scale: 0.5,
+                                  orientation: .right)
+        
+        selfieImageView.image = self.image
         
         self.imagePickerController.dismiss(animated: true, completion: {
             self.uploadImage()
@@ -62,6 +79,6 @@ extension SelfieViewController:UINavigationControllerDelegate, UIImagePickerCont
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         
-        print("testB")
+        // 
     }
 }
