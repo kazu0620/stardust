@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A648C1F1E6A633F00FDA1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A648C1E1E6A633F00FDA1B4 /* GoogleService-Info.plist */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
 		A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2421E6A5FDF007C677D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A648C1E1E6A633F00FDA1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Stardust/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0D6B23B1E6A5FDF007C677D /* Stardust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stardust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D6B2401E6A5FDF007C677D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		A0D6B2321E6A5FDF007C677D = {
 			isa = PBXGroup;
 			children = (
+				4A648C1E1E6A633F00FDA1B4 /* GoogleService-Info.plist */,
 				A0D6B23D1E6A5FDF007C677D /* Stardust */,
 				A0D6B23C1E6A5FDF007C677D /* Products */,
 			);
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D6B2491E6A5FDF007C677D /* LaunchScreen.storyboard in Resources */,
+				4A648C1F1E6A633F00FDA1B4 /* GoogleService-Info.plist in Resources */,
 				A0D6B2461E6A5FDF007C677D /* Assets.xcassets in Resources */,
 				A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */,
 			);
@@ -297,6 +301,7 @@
 				A0D6B24F1E6A5FDF007C677D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
