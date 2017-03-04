@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.requestSendNotification()
 
         // 画像付きlocal notificationのサンプル
-        LocalNotificationPublisher.publish(withUserName: "foo", userImage: UIImage(named: "GitHub-Mark"), timeInterval: 5)
+//        LocalNotificationPublisher.publish(withUserName: "foo", userImage: UIImage(named: "GitHub-Mark"), timeInterval: 5)
+//        LocalNotificationPublisher.publish(withUserName: "shikata", imageSubPath: "3538619.png", timeInterval: 5)
         
         return true
     }

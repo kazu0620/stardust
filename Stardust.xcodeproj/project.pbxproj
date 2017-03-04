@@ -21,6 +21,10 @@
 		80AB59421E6AA4E000373C35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59371E6A84A100373C35 /* SignUpViewController.swift */; };
 		A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
+		F1CF15AF1E6A966500B534FB /* NearByList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF15AE1E6A966500B534FB /* NearByList.storyboard */; };
+		F1CF15B11E6A96E000B534FB /* NearByListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */; };
+		F1CF15B41E6A973400B534FB /* NearByListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF15B21E6A973400B534FB /* NearByListCell.swift */; };
+		F1CF15B51E6A973400B534FB /* NearByListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CF15B31E6A973400B534FB /* NearByListCell.xib */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
 		A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2421E6A5FDF007C677D /* Main.storyboard */; };
 		A0D6B2461E6A5FDF007C677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D6B2451E6A5FDF007C677D /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 		80AB59351E6A80CB00373C35 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		80AB59371E6A84A100373C35 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		80AB59391E6A855700373C35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F1CF15AE1E6A966500B534FB /* NearByList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NearByList.storyboard; sourceTree = "<group>"; };
+		F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByListViewController.swift; sourceTree = "<group>"; };
+		F1CF15B21E6A973400B534FB /* NearByListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByListCell.swift; sourceTree = "<group>"; };
+		F1CF15B31E6A973400B534FB /* NearByListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByListCell.xib; sourceTree = "<group>"; };
 		80AB593B1E6A857B00373C35 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAccountFetcher.swift; sourceTree = "<group>"; };
 		80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -94,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				A0D6B2401E6A5FDF007C677D /* ViewController.swift */,
+				F1CF15B01E6A96E000B534FB /* NearByListViewController.swift */,
+				F1CF15B21E6A973400B534FB /* NearByListCell.swift */,
+				F1CF15B31E6A973400B534FB /* NearByListCell.xib */,
 				80AB59371E6A84A100373C35 /* SignUpViewController.swift */,
 			);
 			name = View;
@@ -124,6 +135,7 @@
 			children = (
 				A0D6B2421E6A5FDF007C677D /* Main.storyboard */,
 				A0D6B2471E6A5FDF007C677D /* LaunchScreen.storyboard */,
+				F1CF15AE1E6A966500B534FB /* NearByList.storyboard */,
 				80AB59351E6A80CB00373C35 /* SignUp.storyboard */,
 			);
 			name = UI;
@@ -246,7 +258,9 @@
 				A0D6B2491E6A5FDF007C677D /* LaunchScreen.storyboard in Resources */,
 				4A648C1F1E6A633F00FDA1B4 /* GoogleService-Info.plist in Resources */,
 				A0D6B2461E6A5FDF007C677D /* Assets.xcassets in Resources */,
+				F1CF15B51E6A973400B534FB /* NearByListCell.xib in Resources */,
 				A0D6B2441E6A5FDF007C677D /* Main.storyboard in Resources */,
+				F1CF15AF1E6A966500B534FB /* NearByList.storyboard in Resources */,
 				80AB59361E6A80CB00373C35 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,9 +323,14 @@
 				710A819D1E6A97E20093D2D5 /* NotificationPublisher.swift in Sources */,
 				80AB592E1E6A749400373C35 /* Person.swift in Sources */,
 				80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */,
+				F1CF15B41E6A973400B534FB /* NearByListCell.swift in Sources */,
 				80AB59301E6A750500373C35 /* Topic.swift in Sources */,
 				80AB59421E6AA4E000373C35 /* SignUpViewController.swift in Sources */,
+
+				F1CF15B11E6A96E000B534FB /* NearByListViewController.swift in Sources */,
+
 				4A648C271E6AA2B800FDA1B4 /* FirebaseAccessor.swift in Sources */,
+
 				80AB59321E6A758800373C35 /* Call.swift in Sources */,
 				A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */,
 				A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */,
