@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Vcz-Ig-Q5x">
             <objects>
-                <viewController id="xBv-WD-w07" sceneMemberID="viewController">
+                <viewController id="xBv-WD-w07" customClass="SignUpViewController" customModule="Stardust" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hOh-m0-wmd"/>
                         <viewControllerLayoutGuide type="bottom" id="S8e-f9-Sk6"/>
@@ -74,18 +74,32 @@
                                     <constraint firstAttribute="trailing" secondItem="rhh-U4-tCl" secondAttribute="trailing" id="yQK-v7-Dbb"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8C-8T-Ihl">
+                                <rect key="frame" x="137" y="60" width="100" height="100"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93122661113739014" green="0.93119871616363525" blue="0.93121451139450073" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="d8C-8T-Ihl" firstAttribute="bottom" secondItem="MIf-sN-FGX" secondAttribute="bottom" id="39X-wR-aPu"/>
+                            <constraint firstItem="d8C-8T-Ihl" firstAttribute="top" secondItem="MIf-sN-FGX" secondAttribute="top" id="5cc-sW-et7"/>
                             <constraint firstItem="iSP-pe-7Yy" firstAttribute="centerX" secondItem="v0L-fc-xQo" secondAttribute="centerX" id="Pai-hx-zOQ"/>
                             <constraint firstItem="PxE-8g-xw9" firstAttribute="leading" secondItem="v0L-fc-xQo" secondAttribute="leading" constant="50" id="Pxt-Zk-DIS"/>
+                            <constraint firstItem="d8C-8T-Ihl" firstAttribute="trailing" secondItem="MIf-sN-FGX" secondAttribute="trailing" id="TC8-WB-Tqp"/>
                             <constraint firstAttribute="trailing" secondItem="PxE-8g-xw9" secondAttribute="trailing" constant="50" id="Ulf-zq-pgJ"/>
+                            <constraint firstItem="d8C-8T-Ihl" firstAttribute="leading" secondItem="MIf-sN-FGX" secondAttribute="leading" id="ae7-Ji-QY7"/>
                             <constraint firstItem="PxE-8g-xw9" firstAttribute="top" secondItem="MIf-sN-FGX" secondAttribute="bottom" constant="40" id="fj0-Py-6UC"/>
                             <constraint firstItem="MIf-sN-FGX" firstAttribute="centerX" secondItem="v0L-fc-xQo" secondAttribute="centerX" id="lpZ-2B-xKA"/>
                             <constraint firstItem="MIf-sN-FGX" firstAttribute="top" secondItem="hOh-m0-wmd" secondAttribute="bottom" constant="40" id="uLd-r5-UdH"/>
                             <constraint firstItem="iSP-pe-7Yy" firstAttribute="top" secondItem="PxE-8g-xw9" secondAttribute="bottom" constant="40" id="ue4-uO-afZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="camera" destination="d8C-8T-Ihl" id="ABm-Iu-uyi"/>
+                        <outlet property="connectTwitter" destination="rhh-U4-tCl" id="4dg-Hb-g3d"/>
+                        <outlet property="selfieView" destination="MIf-sN-FGX" id="FMA-QL-Ywj"/>
+                        <outlet property="signUp" destination="iSP-pe-7Yy" id="64d-aZ-Rl2"/>
+                        <outlet property="username" destination="oGp-Yt-ove" id="RyS-rj-Erv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFU-je-SQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

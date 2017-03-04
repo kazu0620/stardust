@@ -17,7 +17,7 @@ struct SignUpViewModel {
 
     init(
         username: Driver<String>,
-        image: Driver<UIImage>,
+        image: Driver<UIImage?>,
         tapTwitter: Driver<Void>,
         tapSignUp: Driver<Void>
         ) {
@@ -40,7 +40,9 @@ struct SignUpViewModel {
         
         let account = Driver.zip(username, image, twitterId){ ($0, $1, $2) }
             .map{ name, image, twitterId -> PersonForPost? in
-                guard let twitterId = twitterId, !name.isEmpty else {
+                guard let twitterId = twitterId,
+                    !name.isEmpty,
+                    image = image else {
                     return nil
                 }
                 
