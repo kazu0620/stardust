@@ -172,6 +172,7 @@
 				TargetAttributes = {
 					A0D6B23A1E6A5FDF007C677D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SGPPBQ73W3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -386,6 +387,7 @@
 			baseConfigurationReference = 6C20BA1922B5318C6ECD72C1 /* Pods-Stardust.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SGPPBQ73W3;
 				INFOPLIST_FILE = Stardust/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardustswift.com.Stardust;
@@ -399,6 +401,7 @@
 			baseConfigurationReference = 696A59F32F327B088A4AC38D /* Pods-Stardust.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SGPPBQ73W3;
 				INFOPLIST_FILE = Stardust/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardustswift.com.Stardust;
