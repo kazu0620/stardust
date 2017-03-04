@@ -9,6 +9,7 @@ pod 'NearbyMessages'
 pod 'RxSwift',    '~> 3.0'
 pod 'RxCocoa',    '~> 3.0'
 pod 'Argo'
+pod 'Curry'
 
 target 'Stardust' do
 end
