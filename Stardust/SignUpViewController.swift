@@ -10,8 +10,24 @@ import UIKit
 import RxSwift
 import RxCocoa
 import AVFoundation
+import Argo
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, PersonEventProtocol, CallEventProtocol {
+    internal func childChanged(call: Call, key: String) {
+        print("[change]\(key):{\(call)}")
+    }
+    
+    internal func childAdd(call: Call, key: String) {
+        print("[add]\(key):{\(call)}")
+    }
+    
+    internal func childChanged(person: Decoded<Person>) {
+        print("[change]person{\(person)}")
+    }
+    
+    internal func childAdd(person: Decoded<Person>) {
+        print("[add]person{\(person)}")
+    }
     
     @IBOutlet weak var signUp: UIButton!
     @IBOutlet weak var connectTwitter: UIButton!
@@ -21,11 +37,18 @@ class SignUpViewController: UIViewController {
     
     fileprivate let disposeBag = DisposeBag()
     fileprivate let selfie = Variable<UIImage?>(nil)
+    
+    var firebaseAccessor: FirebaseAccessor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         bindSelfie()
         bindViewModel()
+//        firebaseAccessor = FirebaseAccessor()
+//        if let accessor = self.firebaseAccessor {
+//            accessor.personEventProtocol = self
+//            accessor.callEventProtocol = self
+//        }
     }
 
     override func didReceiveMemoryWarning() {
