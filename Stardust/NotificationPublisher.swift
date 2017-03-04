@@ -1,7 +1,28 @@
 import UIKit
+import FirebaseStorage
 import UserNotifications
 
 class LocalNotificationPublisher {
+    
+    static func publish(withUserName userName: String, imageSubPath subPath: String?, timeInterval: TimeInterval) {
+        
+        guard let subPath = subPath else {
+            
+            return
+        }
+        
+        let storage = FIRStorage.storage()
+        let storageRef = storage.reference(forURL: "gs://stardustswift-1c8c5.appspot.com/images/")
+        let riversRef = storageRef.child(subPath)
+        riversRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
+            if let imageData = data {
+                let image = UIImage.init(data: imageData)
+                
+                self.publish(withUserName: userName, userImage: image, timeInterval: timeInterval)
+            }
+        }
+        
+    }
     
     static func publish(withUserName userName: String, userImage: UIImage?, timeInterval: TimeInterval) {
         
