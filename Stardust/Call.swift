@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Call {
+public struct Call {
     let callers: [Person.TwitterId]
 }

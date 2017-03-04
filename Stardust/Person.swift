@@ -11,7 +11,7 @@ import Argo
 import Runes
 import Curry
 
-struct Person {
+public struct Person {
     typealias TwitterId = String
     
     let twitterId: TwitterId
@@ -30,7 +30,7 @@ struct Person {
 }
 
 extension Person: Decodable {
-    static func decode(_ json: JSON) -> Decoded<Person> {
+    public static func decode(_ json: JSON) -> Decoded<Person> {
         return curry(Person.init)
             <^> json <| "twitterId"
             <*> json <| "name"
