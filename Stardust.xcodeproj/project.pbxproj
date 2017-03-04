@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A648C1F1E6A633F00FDA1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A648C1E1E6A633F00FDA1B4 /* GoogleService-Info.plist */; };
 		1CE1043B91308486E102CFAC /* Pods_Stardust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF51C9BABADFD7993C557F7C /* Pods_Stardust.framework */; };
+		4A648C1F1E6A633F00FDA1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A648C1E1E6A633F00FDA1B4 /* GoogleService-Info.plist */; };
 		80AB592E1E6A749400373C35 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592D1E6A749400373C35 /* Person.swift */; };
 		80AB59301E6A750500373C35 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB592F1E6A750500373C35 /* Topic.swift */; };
 		80AB59321E6A758800373C35 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59311E6A758800373C35 /* Call.swift */; };
