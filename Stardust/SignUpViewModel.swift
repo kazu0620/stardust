@@ -42,7 +42,7 @@ struct SignUpViewModel {
             .map{ name, image, twitterId -> PersonForPost? in
                 guard let twitterId = twitterId,
                     !name.isEmpty,
-                    image = image else {
+                    let image = image else {
                     return nil
                 }
                 

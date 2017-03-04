@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ma0-lO-x7Z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--SIGN UP-->
         <scene sceneID="Vcz-Ig-Q5x">
             <objects>
-                <viewController id="xBv-WD-w07" customClass="SignUpViewController" customModule="Stardust" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xBv-WD-w07" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hOh-m0-wmd"/>
                         <viewControllerLayoutGuide type="bottom" id="S8e-f9-Sk6"/>
@@ -95,11 +95,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="SIGN UP" id="4l9-st-op6"/>
                     <connections>
-                        <outlet property="camera" destination="d8C-8T-Ihl" id="ABm-Iu-uyi"/>
-                        <outlet property="connectTwitter" destination="rhh-U4-tCl" id="4dg-Hb-g3d"/>
-                        <outlet property="selfieView" destination="MIf-sN-FGX" id="FMA-QL-Ywj"/>
-                        <outlet property="signUp" destination="iSP-pe-7Yy" id="64d-aZ-Rl2"/>
-                        <outlet property="username" destination="oGp-Yt-ove" id="RyS-rj-Erv"/>
+                        <outlet property="camera" destination="d8C-8T-Ihl" id="WiX-P0-YNY"/>
+                        <outlet property="connectTwitter" destination="rhh-U4-tCl" id="vJh-qF-mlO"/>
+                        <outlet property="selfieView" destination="MIf-sN-FGX" id="LAM-cp-s8h"/>
+                        <outlet property="signUp" destination="iSP-pe-7Yy" id="3ck-TM-wwY"/>
+                        <outlet property="username" destination="oGp-Yt-ove" id="4dM-vs-cmj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFU-je-SQB" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var selfieView: UIImageView!
     @IBOutlet weak var camera: UIButton!
+    
     fileprivate let disposeBag = DisposeBag()
     fileprivate let selfie = Variable<UIImage?>(nil)
 

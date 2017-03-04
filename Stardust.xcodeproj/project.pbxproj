@@ -16,6 +16,8 @@
 		80AB59361E6A80CB00373C35 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AB59351E6A80CB00373C35 /* SignUp.storyboard */; };
 		80AB593C1E6A857B00373C35 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AB593B1E6A857B00373C35 /* Accounts.framework */; };
 		80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593F1E6A8B7800373C35 /* SignUpViewModel.swift */; };
+		80AB59411E6AA31200373C35 /* TwitterAccountFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB593D1E6A85B100373C35 /* TwitterAccountFetcher.swift */; };
+		80AB59421E6AA4E000373C35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AB59371E6A84A100373C35 /* SignUpViewController.swift */; };
 		A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0077F1E6A8FAF007ED2BD /* PersonSearcher.swift */; };
 		A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B23E1E6A5FDF007C677D /* AppDelegate.swift */; };
 		A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6B2401E6A5FDF007C677D /* ViewController.swift */; };
@@ -297,10 +299,12 @@
 				80AB592E1E6A749400373C35 /* Person.swift in Sources */,
 				80AB59401E6A8B7800373C35 /* SignUpViewModel.swift in Sources */,
 				80AB59301E6A750500373C35 /* Topic.swift in Sources */,
+				80AB59421E6AA4E000373C35 /* SignUpViewController.swift in Sources */,
 				80AB59321E6A758800373C35 /* Call.swift in Sources */,
 				A0B007801E6A8FAF007ED2BD /* PersonSearcher.swift in Sources */,
 				A0D6B2411E6A5FDF007C677D /* ViewController.swift in Sources */,
 				A0D6B23F1E6A5FDF007C677D /* AppDelegate.swift in Sources */,
+				80AB59411E6AA31200373C35 /* TwitterAccountFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
