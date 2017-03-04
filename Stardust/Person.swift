@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 struct Person {
     typealias TwitterId = String
     
