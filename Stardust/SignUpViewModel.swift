@@ -13,6 +13,7 @@ import RxCocoa
 struct SignUpViewModel {
     private(set) var isEnabledTwitter: Driver<Bool>
     private(set) var isEnabledSignUp: Driver<Bool>
+    private(set) var didFinishSignUp: Driver<Void>
 
     init(
         username: Driver<String>,
@@ -38,16 +39,16 @@ struct SignUpViewModel {
             }
         
         let account = Driver.zip(username, image, twitterId){ ($0, $1, $2) }
-            .map{ name, image, twitterId -> Person? in
+            .map{ name, image, twitterId -> PersonForPost? in
                 guard let twitterId = twitterId, !name.isEmpty else {
                     return nil
                 }
                 
-                return Person(twitterId: twitterId,
-                              name: name,
-                              image: image,
-                              interests: [])
-            }
+                return PersonForPost(twitterId: twitterId,
+                                     name: name,
+                                     image: image,
+                                     interests: [])
+        }
         
         isEnabledSignUp = account.map{
             guard let _ = $0 else {
@@ -56,6 +57,14 @@ struct SignUpViewModel {
             return true
         }
         
+        // TODO: アカウント作成完了を監視したい
+        didFinishSignUp = Driver.empty()
     }
-    
+}
+
+fileprivate struct PersonForPost {
+    let twitterId: Person.TwitterId
+    let name: String
+    let image: UIImage
+    let interests: [Topic]
 }
